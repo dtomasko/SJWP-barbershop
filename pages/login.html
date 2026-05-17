@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prijava — barbershop Savonja</title>
+    <meta name="description" content="Prijava na barbershop Savonja booking račun (Supabase Auth)." />
+    <meta name="keywords" content="prijava, login, barber, račun" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body data-page="login">
+    <div id="site-header"></div>
+
+    <div class="shell" id="config-banner" hidden>
+      <div class="callout callout--warn stack-top">
+        <p><strong>Supabase nije konfiguriran.</strong> Kopiraj <code>../js/config.example.js</code> u <code>../js/config.local.js</code>.</p>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <section class="section shell" aria-labelledby="login-title">
+        <div class="section__head">
+          <h1 class="section__title" id="login-title">Prijava</h1>
+          <p class="section__sub">Email i lozinka (Supabase email/password).</p>
+        </div>
+
+        <form class="form callout" id="login-form" novalidate>
+          <div class="field">
+            <label for="login-email">Email</label>
+            <input id="login-email" name="email" type="email" autocomplete="email" required maxlength="120" />
+          </div>
+          <div class="field">
+            <label for="login-password">Lozinka</label>
+            <input id="login-password" name="password" type="password" autocomplete="current-password" required />
+          </div>
+          <button class="btn btn--primary" type="submit">Prijava</button>
+          <p class="muted">Nemaš račun? <a href="register.html">Registracija</a></p>
+        </form>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="module" src="../js/app.js"></script>
+  </body>
+</html>
+

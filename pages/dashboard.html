@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moj račun — barbershop Savonja</title>
+    <meta name="description" content="Pregled vlastitih rezervacija i otkazivanje termina u barbershop Savonja aplikaciji." />
+    <meta name="keywords" content="dashboard, rezervacije, barber, račun" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body data-page="dashboard">
+    <div id="site-header"></div>
+
+    <div class="shell" id="config-banner" hidden>
+      <div class="callout callout--warn stack-top">
+        <p><strong>Supabase nije konfiguriran.</strong> Kopiraj <code>../js/config.example.js</code> u <code>../js/config.local.js</code>.</p>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <section class="section shell" aria-labelledby="dash-title">
+        <div class="section__head">
+          <h1 class="section__title" id="dash-title">Moje rezervacije</h1>
+          <p class="section__sub">Vidi potvrđene termine i otkaži ih ako treba.</p>
+        </div>
+        <div id="dashboard-appointments"></div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="module" src="../js/app.js"></script>
+  </body>
+</html>
+

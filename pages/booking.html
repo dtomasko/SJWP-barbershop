@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rezervacija — barbershop Savonja</title>
+    <meta name="description" content="Odaberi barbera, uslugu, datum i slobodan termin u barbershop Savonja studiju." />
+    <meta name="keywords" content="rezervacija, booking, termin, kalendar, barber, Savonja" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body data-page="booking">
+    <div id="site-header"></div>
+
+    <div class="shell" id="config-banner" hidden>
+      <div class="callout callout--warn stack-top">
+        <p><strong>Supabase nije konfiguriran.</strong> Kopiraj <code>../js/config.example.js</code> u <code>../js/config.local.js</code>.</p>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <section class="section shell" aria-labelledby="booking-title">
+        <div class="section__head">
+          <h1 class="section__title" id="booking-title">Rezervacija</h1>
+          <p class="section__sub">
+            Pregled slobodnih termina je javan. Za dovršetak rezervacije potrebna je prijava. Odaberi barbera, uslugu,
+            datum i termin (koraci 30 minuta).
+          </p>
+        </div>
+
+        <div class="callout stack-top">
+          <h2 class="booking-subtitle section__title">1. Odaberi barbera</h2>
+          <div id="booking-barbers"></div>
+        </div>
+
+        <div class="split split--2 stack-top">
+          <div class="callout">
+            <div class="field">
+              <label for="booking-service">2. Usluga</label>
+              <select id="booking-service" class="select-field" name="service" required aria-required="true">
+                <option value="">Učitavanje…</option>
+              </select>
+            </div>
+            <p class="muted stack-top">Nedjelja i državni praznici su onemogućeni. Subotom termini do 14:00.</p>
+          </div>
+          <div class="callout" id="booking-summary" hidden></div>
+        </div>
+
+        <div class="callout stack-top">
+          <div class="booking-toolbar">
+            <button class="btn btn--ghost" type="button" data-cal-prev aria-label="Prethodni mjesec">←</button>
+            <h2 class="cal-label section__title" data-cal-label>3. Kalendar</h2>
+            <button class="btn btn--ghost" type="button" data-cal-next aria-label="Sljedeći mjesec">→</button>
+          </div>
+          <div id="booking-calendar" aria-live="polite"></div>
+        </div>
+
+        <div class="callout stack-top">
+          <h2 class="booking-subtitle section__title">4. Slobodni termini</h2>
+          <div id="booking-slots"></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="module" src="../js/app.js"></script>
+  </body>
+</html>
+

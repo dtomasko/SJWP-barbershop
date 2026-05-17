@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontakt — barbershop Savonja</title>
+    <meta name="description" content="Kontakt barbershop Savonja: lokacija, telefon, email i kontakt forma." />
+    <meta name="keywords" content="kontakt, lokacija, barber, telefon, email" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body data-page="contact">
+    <div id="site-header"></div>
+
+    <div class="shell" id="config-banner" hidden>
+      <div class="callout callout--warn stack-top">
+        <p><strong>Supabase nije konfiguriran.</strong> (Za kontakt formu nije nužan, ali je potreban za auth i booking.)</p>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <section class="section shell" aria-labelledby="contact-title">
+        <div class="section__head">
+          <h1 class="section__title" id="contact-title">Kontakt</h1>
+          <p class="section__sub">Pošalji upit putem email klijenta ili nas posjeti uživo.</p>
+        </div>
+
+        <div class="split split--2">
+          <form class="form callout" id="contact-form" novalidate>
+            <div class="field">
+              <label for="c-name">Ime i prezime</label>
+              <input id="c-name" name="name" type="text" autocomplete="name" required maxlength="120" />
+            </div>
+            <div class="field">
+              <label for="c-email">Email</label>
+              <input id="c-email" name="email" type="email" autocomplete="email" required maxlength="120" />
+            </div>
+            <div class="field">
+              <label for="c-msg">Poruka</label>
+              <textarea id="c-msg" name="message" required maxlength="2000"></textarea>
+            </div>
+            <button class="btn btn--primary" type="submit">Pošalji upit</button>
+          </form>
+
+          <div class="callout">
+            <h2 class="booking-subtitle section__title">Podaci</h2>
+            <p><strong>Email:</strong> <a href="mailto:info@barbershop-savonja.hr">info@barbershop-savonja.hr</a></p>
+            <p><strong>Telefon:</strong> <a href="tel:+385911234567">+385 91 123 4567</a></p>
+            <p class="muted"><strong>Lokacija:</strong> Zagreb, Hrvatska (demo adresa)</p>
+            <p class="muted"><strong>Radno vrijeme:</strong> Pon–Pet 09:00–18:00, Sub 09:00–14:00, Ned zatvoreno.</p>
+            <h2 class="booking-subtitle section__title stack-top">Karta</h2>
+            <iframe
+              class="map-frame"
+              title="Lokacija na Google karti"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22236.0!2d15.9819!3d45.8150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d701f0d6a0f1%3A0x0!2sZagreb!5e0!3m2!1shr!2shr!4v1"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="module" src="../js/app.js"></script>
+  </body>
+</html>
+
