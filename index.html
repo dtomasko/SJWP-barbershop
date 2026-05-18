@@ -1,150 +1,196 @@
 <!doctype html>
 <html lang="hr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>barbershop Savonja — rezervacije i premium šišanje</title>
+    <meta
+      name="description"
+      content="barbershop Savonja: moderan barber shop s online rezervacijama, jasnim cijenama i sigurnim korisničkim računom."
+    />
+    <meta
+      name="keywords"
+      content="barber, šišanje, rezervacija, barbershop, Savonja, fade, brada"
+    />
+    <meta
+      name="google-site-verification"
+      content="ejr2laT1Vxrq2xa0mAdOtP4Iyy8rrj4gCtJRoqw3tww"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="author" content="Barbershop Savonja" />
+    <meta
+      property="og:title"
+      content="barbershop Savonja — rezervacije i premium šišanje"
+    />
+    <meta
+      property="og:description"
+      content="barbershop Savonja: moderan barber shop s online rezervacijama, jasnim cijenama i sigurnim korisničkim računom."
+    />
+    <meta
+      property="og:image"
+      content="https://barbershop-savonja.vercel.app/assets/logo/logo_png.png"
+    />
+    <meta property="og:url" content="https://barbershop-savonja.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="hr_HR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="assets/logo/logo_png.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>barbershop Savonja — rezervacije i premium šišanje</title>
-  <meta name="description"
-    content="barbershop Savonja: moderan barber shop s online rezervacijama, jasnim cijenama i sigurnim korisničkim računom." />
-  <meta name="keywords" content="barber, šišanje, rezervacija, barbershop, Savonja, fade, brada" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <meta name="author" content="Barbershop Savonja" />
-  <meta property="og:title" content="barbershop Savonja — rezervacije i premium šišanje" />
-  <meta property="og:description" content="barbershop Savonja: moderan barber shop s online rezervacijama, jasnim cijenama i sigurnim korisničkim računom." />
-  <meta property="og:image" content="https://barbershop-savonja.vercel.app/assets/logo/logo_png.png" />
-  <meta property="og:url" content="https://barbershop-savonja.vercel.app/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="hr_HR" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" type="image/png" href="assets/logo/logo_png.png" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body data-page="home">
+    <div id="site-header"></div>
 
-<body data-page="home">
-  <div id="site-header"></div>
-
-  <div class="shell" id="config-banner" hidden>
-    <div class="callout callout--warn stack-top">
-      <p><strong>Supabase nije konfiguriran.</strong> Kopiraj <code>js/config.example.js</code> u
-        <code>js/config.local.js</code> i unesi URL te anon ključ.
-      </p>
-    </div>
-  </div>
-
-  <main id="main-content">
-    <section class="hero shell">
-      <div class="hero__grid">
-        <div>
-          <h1 class="hero__title">Premium šišanje. Jednostavne rezervacije.</h1>
-          <p class="hero__lead">
-            barbershop Savonja kombinira klasičan barber craft s modernom booking platformom — brzo odaberi uslugu,
-            datum i
-            termin koji ti odgovara.
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="pages/booking.html">Rezerviraj termin</a>
-            <a class="btn btn--ghost" href="pages/services.html">Pregled usluga</a>
-          </div>
-        </div>
-        <div class="hero__art" aria-hidden="true">
-          <img src="assets/logo/logo_png.png" alt="Interijer barber shopa" width="800" height="500" loading="eager" />
-        </div>
-      </div>
-    </section>
-
-    <section class="section shell" aria-labelledby="intro-title">
-      <div class="section__head">
-        <h2 class="section__title" id="intro-title">Tko smo mi</h2>
-        <p class="section__sub">
-          Fokus na detalje, higijenu i rezultat. Svaka usluga ima jasno trajanje i cijenu.
+    <div class="shell" id="config-banner" hidden>
+      <div class="callout callout--warn stack-top">
+        <p>
+          <strong>Supabase nije konfiguriran.</strong> Kopiraj
+          <code>js/config.example.js</code> u <code>js/config.local.js</code> i
+          unesi URL te anon ključ.
         </p>
       </div>
-      <div class="split split--2">
-        <div class="callout">
-          <p class="muted">
-            Naš tim koristi moderne tehnike i provjerene proizvode. Rezervacije su povezane s tvojim računom — vidi
-            povijest termina i jednostavno otkaži ako zatreba.
+    </div>
+
+    <main id="main-content">
+      <section class="hero shell">
+        <div class="hero__grid">
+          <div>
+            <h1 class="hero__title">
+              Premium šišanje. Jednostavne rezervacije.
+            </h1>
+            <p class="hero__lead">
+              barbershop Savonja kombinira klasičan barber craft s modernom
+              booking platformom — brzo odaberi uslugu, datum i termin koji ti
+              odgovara.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="pages/booking.html"
+                >Rezerviraj termin</a
+              >
+              <a class="btn btn--ghost" href="pages/services.html"
+                >Pregled usluga</a
+              >
+            </div>
+          </div>
+          <div class="hero__art" aria-hidden="true">
+            <img
+              src="assets/logo/logo_png.png"
+              alt="Interijer barber shopa"
+              width="800"
+              height="500"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell" aria-labelledby="intro-title">
+        <div class="section__head">
+          <h2 class="section__title" id="intro-title">Tko smo mi</h2>
+          <p class="section__sub">
+            Fokus na detalje, higijenu i rezultat. Svaka usluga ima jasno
+            trajanje i cijenu.
           </p>
         </div>
-        <div class="callout">
-          <p class="muted">
-            Jednostavno odaberi barbera, datum i vrijeme i uživaj u vrhunskoj usluzi od naših majstora. Rezerviraj
-            svoj termin sada i postani dio ekipe Savonja!
-          </p>
+        <div class="split split--2">
+          <div class="callout">
+            <p class="muted">
+              Naš tim koristi moderne tehnike i provjerene proizvode.
+              Rezervacije su povezane s tvojim računom — vidi povijest termina i
+              jednostavno otkaži ako zatreba.
+            </p>
+          </div>
+          <div class="callout">
+            <p class="muted">
+              Jednostavno odaberi barbera, datum i vrijeme i uživaj u vrhunskoj
+              usluzi od naših majstora. Rezerviraj svoj termin sada i postani
+              dio ekipe Savonja!
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section shell" aria-labelledby="services-preview-title">
-      <div class="section__head">
-        <h2 class="section__title" id="services-preview-title">Popularne usluge</h2>
-        <p class="section__sub"></p>
-      </div>
-      <div class="grid grid--3" id="home-services"></div>
-      <p class="stack-top">
-        <a class="btn btn--ghost" href="pages/services.html">Sve usluge</a>
-      </p>
-    </section>
+      <section class="section shell" aria-labelledby="services-preview-title">
+        <div class="section__head">
+          <h2 class="section__title" id="services-preview-title">
+            Popularne usluge
+          </h2>
+          <p class="section__sub"></p>
+        </div>
+        <div class="grid grid--3" id="home-services"></div>
+        <p class="stack-top">
+          <a class="btn btn--ghost" href="pages/services.html">Sve usluge</a>
+        </p>
+      </section>
 
-    <section class="section shell" aria-labelledby="reviews-title">
-      <div class="section__head">
-        <h2 class="section__title" id="reviews-title">Recenzije</h2>
-        <p class="section__sub">Komentari naših klijenata.</p>
-      </div>
-      <div class="grid grid--3">
-        <figure class="review">
-          <p class="stars" aria-label="5 od 5 zvjezdica">★★★★★</p>
-          <blockquote>
-            <p>“Najčišći fade u gradu. Online booking štedi vrijeme.”</p>
-          </blockquote>
-          <figcaption class="muted">— Marko</figcaption>
-        </figure>
-        <figure class="review">
-          <p class="stars" aria-label="5 od 5 zvjezdica">★★★★★</p>
-          <blockquote>
-            <p>“Brada i konture savršeno simetrične. Dolazim ponovo.”</p>
-          </blockquote>
-          <figcaption class="muted">— Ivan</figcaption>
-        </figure>
-        <figure class="review">
-          <p class="stars" aria-label="5 od 5 zvjezdica">★★★★★</p>
-          <blockquote>
-            <p>“Dečki su super, brzo odabereš termin i gotovo.”</p>
-          </blockquote>
-          <figcaption class="muted">— Luka</figcaption>
-        </figure>
-      </div>
-    </section>
+      <section class="section shell" aria-labelledby="reviews-title">
+        <div class="section__head">
+          <h2 class="section__title" id="reviews-title">Recenzije</h2>
+          <p class="section__sub">Komentari naših klijenata.</p>
+        </div>
+        <div class="grid grid--3">
+          <figure class="review">
+            <p class="stars" aria-label="5 od 5 zvjezdica">★★★★★</p>
+            <blockquote>
+              <p>“Najčišći fade u gradu. Online booking štedi vrijeme.”</p>
+            </blockquote>
+            <figcaption class="muted">— Marko</figcaption>
+          </figure>
+          <figure class="review">
+            <p class="stars" aria-label="5 od 5 zvjezdica">★★★★★</p>
+            <blockquote>
+              <p>“Brada i konture savršeno simetrične. Dolazim ponovo.”</p>
+            </blockquote>
+            <figcaption class="muted">— Ivan</figcaption>
+          </figure>
+          <figure class="review">
+            <p class="stars" aria-label="5 od 5 zvjezdica">★★★★★</p>
+            <blockquote>
+              <p>“Dečki su super, brzo odabereš termin i gotovo.”</p>
+            </blockquote>
+            <figcaption class="muted">— Luka</figcaption>
+          </figure>
+        </div>
+      </section>
 
-    <section class="section shell" aria-labelledby="why-title">
-      <div class="section__head">
-        <h2 class="section__title" id="why-title">Zašto odabrati nas</h2>
-        <p class="section__sub">Tri stvari na koje smo posebno ponosni.</p>
-      </div>
-      <div class="grid grid--3">
-        <article class="callout">
-          <h3 class="card__title">Transparentan cjenik</h3>
-          <p class="muted">Sve usluge su u bazi: naziv, trajanje i cijena — uvijek usklađeno na webu.</p>
-        </article>
-        <article class="callout">
-          <h3 class="card__title">Sigurna rezervacija</h3>
-          <p class="muted">RLS u Postgresu sprječava pristup tuđim terminima; duplikati slotova blokirani su u bazi.</p>
-        </article>
-        <article class="callout">
-          <h3 class="card__title">Mobile-first iskustvo</h3>
-          <p class="muted">Veliki touch targeti, čitljiva tipografija i brza navigacija — prvo mobitel, zatim desktop.
-          </p>
-        </article>
-      </div>
-    </section>
-  </main>
+      <section class="section shell" aria-labelledby="why-title">
+        <div class="section__head">
+          <h2 class="section__title" id="why-title">Zašto odabrati nas</h2>
+          <p class="section__sub">Tri stvari na koje smo posebno ponosni.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="callout">
+            <h3 class="card__title">Transparentan cjenik</h3>
+            <p class="muted">
+              Sve usluge su u bazi: naziv, trajanje i cijena — uvijek usklađeno
+              na webu.
+            </p>
+          </article>
+          <article class="callout">
+            <h3 class="card__title">Sigurna rezervacija</h3>
+            <p class="muted">
+              RLS u Postgresu sprječava pristup tuđim terminima; duplikati
+              slotova blokirani su u bazi.
+            </p>
+          </article>
+          <article class="callout">
+            <h3 class="card__title">Mobile-first iskustvo</h3>
+            <p class="muted">
+              Veliki touch targeti, čitljiva tipografija i brza navigacija —
+              prvo mobitel, zatim desktop.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
 
-  <div id="site-footer"></div>
+    <div id="site-footer"></div>
 
-  <script type="module" src="js/app.js"></script>
-</body>
-
+    <script type="module" src="js/app.js"></script>
+  </body>
 </html>
