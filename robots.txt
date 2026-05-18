@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://barbershop-savonja.vercel.app/sitemap.xml
