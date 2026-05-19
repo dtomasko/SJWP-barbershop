@@ -1,57 +1,62 @@
 <!doctype html>
 <html lang="hr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cjenik — barbershop Savonja</title>
-    <meta name="description" content="Tablični cjenik usluga barbershop Savonja studija s trajanjem i cijenom." />
-    <meta name="keywords" content="cjenik, barber, cijena, trajanje, usluge" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-    <meta name="author" content="Barbershop Savonja" />
-    <meta property="og:title" content="Cjenik — barbershop Savonja" />
-    <meta property="og:description" content="Tablični cjenik usluga barbershop Savonja studija s trajanjem i cijenom." />
-    <meta property="og:image" content="https://barbershop-savonja.vercel.app/assets/logo/logo_png.png" />
-    <meta property="og:url" content="https://barbershop-savonja.vercel.app/pages/pricing.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="hr_HR" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" type="image/png" href="../assets/logo/logo_png.png" />
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
-  <body data-page="pricing">
-    <div id="site-header"></div>
 
-    <div class="shell" id="config-banner" hidden>
-      <div class="callout callout--warn stack-top">
-        <p><strong>Supabase nije konfiguriran.</strong> Kopiraj <code>../js/config.example.js</code> u <code>../js/config.local.js</code>.</p>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cjenik — barbershop Savonja</title>
+  <meta name="description" content="Tablični cjenik usluga barbershop Savonja studija s trajanjem i cijenom." />
+  <meta name="keywords" content="cjenik, barber, cijena, trajanje, usluge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta name="author" content="Dominik Tomaško" />
+  <meta property="og:title" content="Cjenik — barbershop Savonja" />
+  <meta property="og:description" content="Tablični cjenik usluga barbershop Savonja studija s trajanjem i cijenom." />
+  <meta property="og:image" content="https://barbershop-savonja.vercel.app/assets/logo/logo_png.png" />
+  <meta property="og:url" content="https://barbershop-savonja.vercel.app/pages/pricing.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="hr_HR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="../assets/logo/logo_png.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body data-page="pricing">
+  <div id="site-header"></div>
+
+  <div class="shell" id="config-banner" hidden>
+    <div class="callout callout--warn stack-top">
+      <p>
+        <strong>Supabase nije konfiguriran.</strong> Kopiraj
+        <code>../js/config.example.js</code> u
+        <code>../js/config.local.js</code>.
+      </p>
     </div>
+  </div>
 
-    <main id="main-content">
-      <section class="section shell" aria-labelledby="pricing-title">
-        <div class="section__head">
-          <h1 class="section__title" id="pricing-title">Cjenik</h1>
-          <p class="section__sub">Minimalno 10 usluga u tablici — učitava se dinamički iz baze.</p>
-        </div>
-        <div class="table-wrap">
-          <table class="table" aria-label="Cjenik usluga">
-            <thead>
-              <tr>
-                <th scope="col">Usluga</th>
-                <th scope="col">Trajanje</th>
-                <th scope="col">Cijena</th>
-              </tr>
-            </thead>
-            <tbody data-pricing-tbody></tbody>
-          </table>
-        </div>
-      </section>
-    </main>
+  <main id="main-content">
+    <section class="section shell" aria-labelledby="pricing-title">
+      <div class="section__head">
+        <h1 class="section__title" id="pricing-title">Cjenik</h1>
+      </div>
+      <div class="table-wrap">
+        <table class="table" aria-label="Cjenik usluga">
+          <thead>
+            <tr>
+              <th scope="col">Usluga</th>
+              <th scope="col">Trajanje</th>
+              <th scope="col">Cijena</th>
+            </tr>
+          </thead>
+          <tbody data-pricing-tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
 
-    <div id="site-footer"></div>
-    <script type="module" src="../js/app.js"></script>
-  </body>
+  <div id="site-footer"></div>
+  <script type="module" src="../js/app.js"></script>
+</body>
+
 </html>
-

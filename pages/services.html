@@ -1,46 +1,53 @@
 <!doctype html>
 <html lang="hr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Usluge — barbershop Savonja</title>
-    <meta name="description" content="Pregled aktivnih usluga barbershop Savonja studija: trajanje, cijena i brza rezervacija." />
-    <meta name="keywords" content="usluge, barber, šišanje, fade, brada, cijena" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-    <meta name="author" content="Barbershop Savonja" />
-    <meta property="og:title" content="Usluge — barbershop Savonja" />
-    <meta property="og:description" content="Pregled aktivnih usluga barbershop Savonja studija: trajanje, cijena i brza rezervacija." />
-    <meta property="og:image" content="https://barbershop-savonja.vercel.app/assets/logo/logo_png.png" />
-    <meta property="og:url" content="https://barbershop-savonja.vercel.app/pages/services.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="hr_HR" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" type="image/png" href="../assets/logo/logo_png.png" />
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
-  <body data-page="services">
-    <div id="site-header"></div>
 
-    <div class="shell" id="config-banner" hidden>
-      <div class="callout callout--warn stack-top">
-        <p><strong>Supabase nije konfiguriran.</strong> Kopiraj <code>../js/config.example.js</code> u <code>../js/config.local.js</code>.</p>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Usluge — barbershop Savonja</title>
+  <meta name="description"
+    content="Pregled aktivnih usluga barbershop Savonja studija: trajanje, cijena i brza rezervacija." />
+  <meta name="keywords" content="usluge, barber, šišanje, fade, brada, cijena" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta name="author" content="Dominik Tomaško" />
+  <meta property="og:title" content="Usluge — barbershop Savonja" />
+  <meta property="og:description"
+    content="Pregled aktivnih usluga barbershop Savonja studija: trajanje, cijena i brza rezervacija." />
+  <meta property="og:image" content="https://barbershop-savonja.vercel.app/assets/logo/logo_png.png" />
+  <meta property="og:url" content="https://barbershop-savonja.vercel.app/pages/services.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="hr_HR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="../assets/logo/logo_png.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body data-page="services">
+  <div id="site-header"></div>
+
+  <div class="shell" id="config-banner" hidden>
+    <div class="callout callout--warn stack-top">
+      <p>
+        <strong>Supabase nije konfiguriran.</strong> Kopiraj
+        <code>../js/config.example.js</code> u
+        <code>../js/config.local.js</code>.
+      </p>
     </div>
+  </div>
 
-    <main id="main-content">
-      <section class="section shell" aria-labelledby="services-title">
-        <div class="section__head">
-          <h1 class="section__title" id="services-title">Usluge</h1>
-          <p class="section__sub">Podaci dolaze iz Supabase tablice <code>services</code> (samo aktivne stavke).</p>
-        </div>
-        <div class="grid grid--services" id="services-grid"></div>
-      </section>
-    </main>
+  <main id="main-content">
+    <section class="section shell" aria-labelledby="services-title">
+      <div class="section__head">
+        <h1 class="section__title" id="services-title">Usluge</h1>
+      </div>
+      <div class="grid grid--services" id="services-grid"></div>
+    </section>
+  </main>
 
-    <div id="site-footer"></div>
-    <script type="module" src="../js/app.js"></script>
-  </body>
+  <div id="site-footer"></div>
+  <script type="module" src="../js/app.js"></script>
+</body>
+
 </html>
-
