@@ -208,8 +208,8 @@ export function mountLayout(activePage) {
       <div>
         <p class="footer__title">Društvene mreže</p>
         <p class="footer__social">
-          <a href="https://www.instagram.com" rel="noopener noreferrer" target="_blank" aria-label="Instagram">Instagram</a>
-          <a href="https://www.facebook.com" rel="noopener noreferrer" target="_blank" aria-label="Facebook">Facebook</a>
+          <a href="https://www.instagram.com/barbershop_savonja/" rel="noopener noreferrer" target="_blank" aria-label="Instagram">Instagram</a>
+          <a href="https://www.tiktok.com/@barbershop_savonja" rel="noopener noreferrer" target="_blank" aria-label="TikTok">TikTok</a>
         </p>
       </div>
     </div>
